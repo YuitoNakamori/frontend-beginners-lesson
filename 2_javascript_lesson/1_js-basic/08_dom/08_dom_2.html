@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM操作</title>
+    <style>
+      .weather {
+        font-size: 30px;
+        color: #0f56ee;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="my-text">こんにちは</p>
+    <p class="my-text-2">今日は<span class="weather">晴れ</span>です</p>
+
+    <ul class="list">
+      <li class="item">後藤</li>
+      <li class="item">田中</li>
+      <li class="item">菅</li>
+    </ul>
+
+    <script>
+      // DOM要素の取得
+      // console.log(document.querySelector(".my-text").innerHTML);
+      // DOM要素へのアクセス
+      // scriptタグとdefer属性
+      // DOM要素のHTMLの取得
+      // console.log(document.querySelector(".my-text-2").textContent)
+      // document.querySelector(".my-text").innerHTML =
+      //   `今日は<span class="weather">雨</span>です`;
+
+      // DOM要素のテキストの取得
+      document.querySelectorAll(".item").forEach((myItem, i) => {
+        myItem.innerHTML += "くんは" + i + "番目です";
+      });
+
+      // 複数のDOM要素の取得
+      // 複数のDOM要素の書き換え
+    </script>
+  </body>
+</html>

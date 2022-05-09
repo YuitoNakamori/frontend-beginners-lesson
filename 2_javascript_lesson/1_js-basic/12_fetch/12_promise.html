@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Promise</title>
+    <script>
+      new Promise((resolve) => {
+        setTimeout(resolve, 1000);
+      }).then(() => {
+        console.log("1s後に実行されました");
+      });
+
+      // // Promiseとthen
+      // new Promise((resolve) => {
+      //   setTimeout(resolve, 1000);
+      // }).then(() => {
+      //   console.log("1秒後にresolveされました");
+      // });
+      //
+      // // Promiseとreject
+      // new Promise((resolve) => {
+      //   setTimeout(() => {
+      //     resolve("りんご");
+      //   }, 1000);
+      // }).then((value) => {
+      //   console.log(value);
+      // });
+      //
+      // // 非同期処理
+      // new Promise((resolve, reject) => {
+      //   setTimeout(reject, 1000);
+      // }).catch(() => {
+      //   console.log("1秒後にrejectされました");
+      // });
+      //
+      // // 50%の結果で成功する処理
+      // new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     if (Math.random() > 0.5) {
+      //       resolve("今日は晴れです");
+      //       return;
+      //     }
+      //
+      //     reject("エラーが発生しました");
+      //   }, 1000);
+      // })
+      //   .then((result) => {
+      //     console.log(result);
+      //   })
+      //   .catch((result) => {
+      //     console.error(result);
+      //   });
+      //
+      // // 30%の結果で晴れ（成功）・30%の確率で雨（晴れ）・40%の確率で失敗する処理成功する処理
+      // // 晴れ
+      // new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     if (Math.random() > 0.5) {
+      //       resolve("今日は晴れです");
+      //       return;
+      //     }
+      //
+      //     reject("1回目のエラーが発生しました");
+      //   }, 1000);
+      // })
+      //   .then(() => {
+      //     return new Promise((resolve, reject) => {
+      //       setTimeout(() => {
+      //         if (Math.random() > 0.5) {
+      //           resolve("明後日も晴れです");
+      //           return;
+      //         }
+      //
+      //         reject("2回目のエラーが発生しました");
+      //       }, 1000);
+      //     });
+      //   })
+      //   .then((result) => {
+      //     console.log(result);
+      //   })
+      //   .catch((result) => {
+      //     console.error(result);
+      //   });
+    </script>
+  </head>
+  <body></body>
+</html>

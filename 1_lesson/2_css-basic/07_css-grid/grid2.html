@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      .container {
+        height: 100%;
+        display: grid;
+        /* 3列 */
+        grid-template-columns: repeat(3, 1fr);
+        /* できるだけ敷き詰める */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        /* 隙間 */
+        gap: 5px;
+      }
+
+      .box {
+        border: 1px solid black;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+      <div class="box">11</div>
+      <div class="box">12</div>
+      <div class="box">13</div>
+      <div class="box">14</div>
+      <div class="box">15</div>
+      <div class="box">16</div>
+    </div>
+  </body>
+</html>

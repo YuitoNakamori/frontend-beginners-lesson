@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": "item1",
+      "title": "桜",
+      "image": "photos/flower01.jpg",
+      "description": "サクラはヨーロッパ・西シベリア、日本、中国、米国・カナダ[2] など、主に北半球の温帯に広範囲に自生している"
+    },
+    {
+      "id": "item2",
+      "title": "コスモス",
+      "image": "photos/flower02.jpg",
+      "description": "観賞用に栽培される。 日当たりと水はけが良ければ、やせた土地でもよく生育する"
+    },
+    {
+      "id": "item3",
+      "title": "マーガレット",
+      "image": "photos/flower03.jpg",
+      "description": "11月から5月にかけて花を咲かせるキク科の植物で、花言葉は恋占い"
+    },
+    {
+      "id": "item4",
+      "title": "チューリップ",
+      "image": "photos/flower04.jpg",
+      "description": "花色も青以外の赤・黄・オレンジ・白・緑・紫などの単色や複数の色のものなど、数百品種のチューリップが存在する。"
+    },
+    {
+      "id": "item5",
+      "title": "ヒマワリ",
+      "image": "photos/flower05.jpg",
+      "description": "観賞用の園芸植物（花卉）として、主に温室やビニールハウスで栽培される"
+    },
+    {
+      "id": "item6",
+      "title": "アジサイ",
+      "image": "photos/flower06.jpg",
+      "description": "6月から7月にかけて開花し、白、青、紫または赤色の萼（がく）が大きく発達した装飾花をもつ"
+    },
+    {
+      "id": "item7",
+      "title": "ガーベラ",
+      "image": "photos/flower07.jpg",
+      "description": "温帯な地域および、熱帯アジアやアフリカなどに分布し、野生で約40種が存在する"
+    },
+    {
+      "id": "item8",
+      "title": "花8",
+      "image": "photos/flower08.jpg",
+      "description": "？？？？"
+    },
+    {
+      "id": "item9",
+      "title": "カーネーション",
+      "image": "photos/flower09.jpg",
+      "description": "ナデシコ科ナデシコ属の多年草。日本での別名にオランダナデシコ、ジャコウナデシコ、オランダセキチクなど多々あり"
+    },
+    {
+      "id": "item10",
+      "title": "チューリップ",
+      "image": "photos/flower10.jpg",
+      "description": "花色も青以外の赤・黄・オレンジ・白・緑・紫などの単色や複数の色のものなど、数百品種のチューリップが存在する。"
+    },
+    {
+      "id": "item11",
+      "title": "バラ",
+      "image": "photos/flower11.jpg",
+      "description": "「花の女王」と表現されるバラは、ヨーロッパからアジアまで北半球に広く分布する植物です"
+    },
+    {
+      "id": "item12",
+      "title": "バラ",
+      "image": "photos/flower12.jpg",
+      "description": "「花の女王」と表現されるバラは、ヨーロッパからアジアまで北半球に広く分布する植物です"
+    }
+  ]
+}

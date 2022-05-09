@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        /* 主軸に向かって配置する */
+        display: flex;
+        /*  中央配置  */
+        justify-content: center;
+        /*  右側  */
+        justify-content: right;
+        /*  主軸末尾  */
+        justify-content: flex-end;
+        /*  左側  */
+        justify-content: flex-start;
+        /*  均等配置  */
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        background-color: lightblue;
+        padding: 24px;
+      }
+
+      .list {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">BOX1</div>
+      <div class="box">BOX2</div>
+      <div class="box">BOX3</div>
+    </div>
+
+    <ul class="list">
+      <li>りんご</li>
+      <li>バナナ</li>
+      <li>寿司</li>
+    </ul>
+  </body>
+</html>

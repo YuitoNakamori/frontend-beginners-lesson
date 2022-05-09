@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ボーダー・マージン・パディング</title>
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .box {
+        width: 600px;
+        height: 400px;
+
+        background-color: lightpink;
+        /* ボーダー */
+        border: 2px solid #cccccc;
+        /* 角丸 */
+        border-radius: 8px;
+
+        /* ボックスシャドウ */
+        box-shadow: 0 0 5px #cccccc;
+
+        /* マージン */
+        margin: 24px;
+        /* パディング */
+        padding: 24px;
+        /* box-sizing */
+        box-sizing: border-box;
+      }
+
+      .box_1 {
+        margin-right: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusantium
+      alias aliquid beatae consequatur earum eligendi exercitationem illo labore
+      magnam nesciunt nostrum obcaecati, odio officia quidem suscipit unde
+      veniam voluptatem.
+    </div>
+    <div class="box">BOX2</div>
+
+    <div class="container">
+      <div class="box box_1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusantium
+        alias aliquid beatae consequatur earum eligendi exercitationem illo
+        labore magnam nesciunt nostrum obcaecati, odio officia quidem suscipit
+        unde veniam voluptatem.
+      </div>
+      <div class="box box_2">BOX2</div>
+    </div>
+  </body>
+</html>

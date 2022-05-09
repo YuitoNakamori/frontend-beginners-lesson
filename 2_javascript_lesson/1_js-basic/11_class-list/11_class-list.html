@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>クラスの着脱</title>
+    <style>
+      .box {
+        width: 600px;
+        height: 400px;
+        background-color: lightpink;
+      }
+
+      .box.blue {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">色の切り替え</button>
+    <div class="box"></div>
+    <script>
+      document.querySelector(".button").addEventListener("click", () => {
+        // blueがついていたらblueを消す
+        // blueがついてなかったらblueを追加する
+
+        if (document.querySelector(".box").classList.contains("blue")) {
+          document.querySelector(".box").classList.remove("blue");
+        } else {
+          document.querySelector(".box").classList.add("blue");
+        }
+      });
+
+      // クラスの参照
+      // console.log(document.querySelector(".box").classList);
+      //
+      // // ボタンをクリックするたび、ボックスを赤色・青色にするプログラム
+      // document.querySelector(".button").addEventListener("click", (event) => {
+      //   // 解1
+      //   // document.querySelector(".box").classList.toggle("blue");
+      //
+      //   // 解2
+      //   const box = document.querySelector(".box");
+      //   if (box.classList.contains("blue")) {
+      //     box.classList.remove("blue");
+      //   } else {
+      //     box.classList.add("blue");
+      //   }
+      // });
+    </script>
+  </body>
+</html>

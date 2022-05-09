@@ -1,0 +1,17 @@
+h1 {
+  color: hotpink;
+  font-weight: bold;
+  font-size: 120px;
+}
+
+p {
+  background-color: black;
+  color: white;
+}
+
+.box {
+  width: 600px;
+  height: 400px;
+  border: 2px solid #cccccc;
+  box-shadow: #333333 2px 2px 6px;
+}

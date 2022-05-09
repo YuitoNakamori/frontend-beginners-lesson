@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* .header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px 16px 20px;
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header .header_title {
+  line-height: 0;
+}
+
+@media (max-width: 900px) {
+  .header .header_image {
+    width: min(300px, 100%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+.header .header_link-list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.main-visual {
+  background: #ccc;
+  height: 600px;
+  display: grid;
+  place-items: center;
+  background: url(images/visual.jpg) no-repeat center;
+  background-size: cover;
+}
+
+@media (max-width: 900px) {
+  .main-visual {
+    height: 400px;
+  }
+}
+
+.main-visual .main-visual_image {
+  width: min(90%, 450px);
+  height: auto;
+}
+
+.inner {
+  width: min(100%, 980px);
+  padding: 70px 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    padding: 24px;
+  }
+}
+
+.section {
+  display: grid;
+  grid-template-areas:
+    "title image"
+    "text image";
+  gap: 20px 40px;
+}
+
+.section:nth-of-type(2) {
+  grid-template-areas:
+    "image title"
+    "image text";
+  gap: 20px 40px;
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .section,
+  .section:nth-of-type(2) {
+    grid-template-areas:
+      "title"
+      "text"
+      "image";
+  }
+}
+
+.section .section_title {
+  grid-area: title;
+  color: #2495a3;
+  font-size: 25px;
+  align-self: end;
+}
+
+.section .section_text {
+  grid-area: text;
+}
+
+.section .section_image {
+  grid-area: image;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .section .section_image {
+    justify-self: center;
+    width: 100%;
+  }
+}
+
+/* footer */
+.footer {
+  background: #d9eff2;
+  padding: 20px;
+}
+
+.footer .copy-right {
+  text-align: center;
+  color: #2495a3;
+  font-size: 13px;
+}

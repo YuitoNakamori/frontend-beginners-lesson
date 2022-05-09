@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      .container {
+        height: 100%;
+        display: grid;
+
+        grid-template:
+          "title title" 40px
+          "text box" 1fr /
+          1fr 500px;
+      }
+
+      .title {
+        grid-area: title;
+        background-color: lightblue;
+      }
+
+      .text {
+        grid-area: text;
+        background-color: lightskyblue;
+      }
+
+      .box {
+        grid-area: box;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">タイトル</h2>
+      <p class="text">テキスト</p>
+      <div class="box">BOX</div>
+    </div>
+  </body>
+</html>

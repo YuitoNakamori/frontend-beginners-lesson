@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>データのフェッチ</title>
+  </head>
+  <body>
+    <script>
+      // async await
+      // const fetchData = () => {
+      //   return fetch("./human.json").then((response) => {
+      //     return response.json().then((result) => {
+      //       return fetch(result["friend-json"]).then((result) => {
+      //         return result.json();
+      //       });
+      //     });
+      //   });
+      // };
+
+      // async await
+      const fetchData = async () => {
+        const response = await fetch("./human.json");
+        const result = await response.json();
+        const result2 = await fetch(result["friend-json"]);
+        return result2.json();
+      };
+
+      fetchData().then((result) => console.log(result));
+    </script>
+  </body>
+</html>

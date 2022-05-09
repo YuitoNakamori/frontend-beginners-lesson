@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  padding: 80px 0 64px;
+}
+
+.image-list {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.image-list .item {
+  cursor: pointer;
+}
+
+.image-list .item img {
+  object-fit: cover;
+}
+
+.image-list img {
+  width: 100%;
+  height: 100%;
+}
+
+.copy-right {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.image-dialog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  grid-template:
+    ". . close" auto
+    "prev image next" 1fr
+    ". text ." auto /
+    124px 1fr 124px;
+  gap: 24px;
+  align-content: center;
+  padding: 40px;
+  color: white;
+}
+
+.image-dialog.show {
+  display: grid;
+}
+
+.image-dialog .close-button {
+  grid-area: close;
+  justify-self: right;
+}
+
+.image-dialog .prev-button {
+  grid-area: prev;
+  justify-self: left;
+}
+
+.image-dialog .next-button {
+  grid-area: next;
+  justify-self: right;
+}
+
+.image-dialog :is(.prev-button, .next-button):disabled {
+  filter: brightness(0.4);
+  cursor: default;
+}
+
+.image-dialog .image-container {
+  grid-area: image;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.image-dialog .image-container .image {
+  width: min(100%, 800px);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-dialog .text {
+  grid-area: text;
+  text-align: center;
+}
+
+.image-dialog .text .image-title {
+  font-size: 16px;
+}
+.image-dialog .text .image-description {
+  font-size: 14px;
+}

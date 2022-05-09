@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>関数の作り方</title>
+    <script>
+      const showProfile = (name, age) => {
+        return name + "さんは" + age + "歳です";
+      };
+
+      const a = "田中";
+      const result1 = showProfile(a, 18);
+      console.log(result1);
+
+      const b = "後藤";
+      const result2 = showProfile(b);
+      console.log(result2);
+
+      // 関数の基本
+      // 一定時間後に処理をする
+      setTimeout(() => {
+        console.log("こんにちは");
+      }, 1000);
+
+      // 引数
+      // 引数のデフォルト値
+      const showProfile = (name, age) => {
+        return name + "さんは" + age + "歳です";
+      };
+
+      const a = "田中";
+      const result1 = showProfile(a, 18);
+      console.log(result1);
+
+      const b = "後藤";
+      const result2 = showProfile(b);
+      console.log(result2);
+
+    </script>
+  </head>
+  <body></body>
+</html>
