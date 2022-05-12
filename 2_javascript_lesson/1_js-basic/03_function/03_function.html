@@ -16,25 +16,34 @@
       const result2 = showProfile(b);
       console.log(result2);
 
+      var c = 1;
+
       // 関数の基本
       // 一定時間後に処理をする
       setTimeout(() => {
         console.log("こんにちは");
+        console.log(c)
+      }, 2000);
+
+
+
+      setTimeout(() => {
+        c += 1;
       }, 1000);
 
       // 引数
       // 引数のデフォルト値
-      const showProfile = (name, age) => {
-        return name + "さんは" + age + "歳です";
-      };
+      // const showProfile = (name, age = 2) => {
+      //   return name + "さんは" + age + "歳です";
+      // };
 
-      const a = "田中";
-      const result1 = showProfile(a, 18);
-      console.log(result1);
-
-      const b = "後藤";
-      const result2 = showProfile(b);
-      console.log(result2);
+      // const a = "田中";
+      // const result1 = showProfile(a, 18);
+      // console.log(result1);
+      //
+      // const b = "後藤";
+      // const result2 = showProfile(b);
+      // console.log(result2);
 
     </script>
   </head>

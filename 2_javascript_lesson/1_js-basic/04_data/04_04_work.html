@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>課題</title>
+    <script>
+      const myfunc = () => {
+        const a = Math.random()
+        const b = Math.random()
+        const c = Math.random()
+        return Math.max(a,b,c)
+      }
+
+      const myfunc2 = (t,m,p) => {
+        console.log(Math.max(t,m,p))
+        return Math.max(t,m,p)
+      }
+
+
+      console.log(myfunc())
+      console.log(myfunc2(3,6,8))
+
+    </script>
+  </head>
+  <body>
+    <h3>3つのランダムな数値a, b, cを受け取る関数を作ってください</br>
+「○と○と○を受け取りました。一番大きい数値は○です」と出力してください</h3>
+  </body>
+</html>

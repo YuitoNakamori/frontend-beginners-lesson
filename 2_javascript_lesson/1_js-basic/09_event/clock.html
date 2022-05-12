@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>お時計さん</title>
+  </head>
+  <body>
+    <h1>現在時刻</h1>
+    <p>ここに時間が入ります</p>
+    <button class="button type="button" name="button">ボタン</button>
+    <h2>クリックされた時刻</h2>
+    <ul id="list_times">
+    </ul>
+
+
+    <script>
+      list_hms = [];
+
+      const getTime = () => {
+        // 現在時刻
+        const currentDate = new Date();
+        // 時間
+        const hours = String(currentDate.getHours()).padStart(2, "0");
+        // 分
+        const minutes = String(currentDate.getMinutes()).padStart(2, "0");
+        // 秒
+        const seconds = String(currentDate.getSeconds()).padStart(2, "0");
+
+        return [hours, minutes, seconds]
+      }
+
+      const showClock1 = () => {
+        list_hms = getTime();
+        document.querySelector("p").innerHTML =
+          `${list_hms[0]}:${list_hms[1]}:${list_hms[2]}`;
+      }
+
+      document.querySelector(".button").addEventListener("click", (event) => {
+        const ul = document.getElementById('list_times')
+
+        const li = document.createElement('li');
+
+        list_hms = getTime();
+
+        const text = document.createTextNode(`${list_hms[0]}:${list_hms[1]}:${list_hms[2]}にクリックされました`);
+
+        li.appendChild(text);
+        ul.appendChild(li);
+      });
+
+      showClock1()
+      setInterval('showClock1()',200);
+
+
+
+
+      // const ul = document.getElementById('country_list');
+      // for (const num = 0; num < list_dates.length; num++) {
+      // 	// li要素を作成
+      // 	var li = document.createElement('li');
+      //
+      // 	// テキスト情報を作成
+      // 	var text = document.createTextNode(list_dates[num]);
+      //
+      // 	// ul要素に追加
+      // 	li.appendChild(text);
+      // 	ul.appendChild(li);
+      // }
+    </script>
+  </body>
+</html>
