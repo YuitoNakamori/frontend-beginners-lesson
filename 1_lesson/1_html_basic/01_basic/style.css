@@ -1,0 +1,53 @@
+body{
+  background-color: rgba(126, 173, 251, 0.7);
+
+}
+header{
+  color: white;
+  font-family: serif;
+}
+p{
+  margin-left: 24px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  font-size: 12px;
+}
+#icon{
+  width: 160px;
+  height: 160px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+#golf{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-left: 24px;
+}
+img{
+  box-shadow: 0 0 10px #19dd4f;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img:hover{
+  opacity : 0.1;
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px
+}
+section{
+  width: 160px;
+  height: 240px;
+  border: solid;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  box-shadow: 0 0 10px #000;
+}

@@ -1,0 +1,148 @@
+element{
+  --sub_color: #D9EFF2;
+  --main_color: #2495A3;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  height: 56px;
+  background-color: #D9EFF2;
+  font-size: 12px;
+  color: #2495A3;
+  display: grid;
+  place-content: center;
+}
+
+header{
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  background-color: white;
+  z-index:9999;
+}
+
+ul{
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  list-style: none;
+  align-self: center;
+  margin-right: 48px;
+}
+
+#hlogo{
+  margin: 12px 20px;
+}
+
+.big{
+  grid-area:big;
+  position: relative;
+}
+
+#main_back{
+  width: 100%;
+}
+
+#main_logo{
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+.container h2{
+  color: #2495A3;
+  font-size: 24px;
+}
+
+.container p{
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  main {
+    grid-template:
+      "big"
+      "s" 84px
+      "text01"
+      "box01"
+      "text02"
+      "box02" /
+      1fr;
+  }
+}
+
+main{
+  display: grid;
+
+  grid-template:
+    "big big big big"
+    "s s s s" 60px
+    "s1 text01 box01 s3" 300px
+    "s2 box02 text02 s4" 300px /
+     1fr 1fr 1fr 1fr;
+
+  justify-content: space-around;
+}
+
+@media (max-width: 900px) {
+  /* p{
+    color: red;
+  } */
+
+  /* main {
+    grid-template:
+      "big big big"
+      "s s s" 84px
+      "s1 text01 s5"
+      "s2 box01  s6"
+      "s3 text02 s7"
+      "s4 box02  s8" /
+      1fr 1fr 1fr;
+  } */
+
+  main {
+    grid-template:
+      "big big big"
+      "s s s"        10px
+      "s1 text01 s5"
+      "t t t"        40px
+      "s2 box01  s6"
+      "s3 text02 s7"
+      "l l l"        40px
+      "s4 box02  s8" /
+      1fr 1fr 1fr;
+
+    margin-bottom: 24px;
+  }
+
+}
+
+.container01{
+  grid-area: text01;
+  margin-top: 40px;
+}
+
+.container02{
+  grid-area: text02;
+  margin-top: 40px;
+}
+
+#about01{
+  grid-area: box01;
+  margin-right: 40px;
+  margin-left: 60px;
+
+}
+
+#about02{
+  grid-area: box02;
+  margin-right: 60px;
+  margin-left: 40px;
+}

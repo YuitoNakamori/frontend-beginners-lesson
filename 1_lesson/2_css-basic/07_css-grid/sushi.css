@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: grid;
+}
+section{
+  display: grid;
+  grid-template:
+    "small button" 30px
+    "big button" 1fr /
+    1fr 100px;
+}
+
+img{
+  width:100%;
+  height: auto;
+}
+
+p{
+  grid-area: small;
+  font-size: 16px;
+  color: #7d7d7d;
+  padding: 6px 6px 6px 12px;
+}
+
+h3{
+  grid-area: big;
+  font-size: 24px;
+  padding: 6px 6px 6px 12px;
+}
+
+button{
+  grid-area: button;
+
+  width: 80px;
+  height: 50px;
+
+  color: #fff;
+  font-weight: bold;
+  background-color: #00d923;
+  border-radius: 100vh;
+
+  /* place-content: center; */
+  align-self: center;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  justify-self
+  
+}
